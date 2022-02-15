@@ -1,0 +1,9 @@
+*   text=auto
+*.ino   text    eof=lf
+*.c     text    eof=lf
+*.cpp   text    eof=lf
+*.h     text    eof=lf
+*.hpp   text    eof=lf
+.editorconfig   text    eof=lf
+.gitignore      text    eof=lf
+.gitattributes  text    eof=lf
