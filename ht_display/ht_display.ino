@@ -114,7 +114,7 @@ void loop() {
   display.setCursor(0, 0);
   display.println("Copyright (c) 2022");
   display.println("by Aimer Neige");
-  display.println("All rights reserved.");
+  display.println("All rights reserved");
   display.println(disTemp);
   display.println(disHumi);
   display.println(ledStat);
