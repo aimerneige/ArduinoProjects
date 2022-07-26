@@ -1,7 +1,7 @@
 /**
- * SSD1306:    GND   VCC   D0   D1   RES   DC   CS
- * ESP32:      GND   3V3   14   13   TX2   RX2  5
- */
+   SSD1306:    GND   VCC   D0   D1   RES   DC   CS
+   ESP32:      GND   3V3   14   13   TX2   RX2  5
+*/
 
 #include <SPI.h>
 #include <Wire.h>
@@ -27,20 +27,7 @@ MFRC522 mfrc522 = MFRC522(SS_PIN, RST_PIN);
 
 // SSD1306 OLED display
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT,
-  OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
-
-#define DIG_1 12
-#define DIG_2 4
-#define DIG_3 2
-#define DIG_4 15
-
-#define NUM_A 34
-#define NUM_B 35
-#define NUM_C 32
-#define NUM_D 33
-#define NUM_E 25
-#define NUM_F 26
-#define NUM_G 27
+                         OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 
 void rfidSetup() {
   // while (!Serial); // Do nothing if no serial port is opened (added for Arduinos based on ATMEGA32U4)
@@ -53,7 +40,7 @@ void rfidSetup() {
 // setup ssd1306 display
 void displaySetup() {
   Serial.println("Start Setup SSD1306!");
-  if(! display.begin(SSD1306_SWITCHCAPVCC)) {
+  if (! display.begin(SSD1306_SWITCHCAPVCC)) {
     Serial.println(F("SSD1306 allocation failed"));
     // loop forever
     while (1) {
